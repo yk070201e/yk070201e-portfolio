@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap" rel="stylesheet"> <!--폰트설정-->
+    <title>Quest UI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="quest-ui" class="quest-container" style="display: blank;">  <!-- 기본적으로 숨김 -->
+        <div class="quest-title">신문 배달하기</div>
+        <div class="quest-description">
+            자, 다들 준비됐나? 우리는 단순히 신문을 배달하는 사람들이 아니야. <br>
+            우리가 전하는 건 이 도시의 아침이다. <br>
+            이 신문 한 장이 누군가의 하루를 시작하게 하고, 
+            중요한 소식을 알게 하니까. 오늘도 최선을 다해,
+            무사히 배달해주길 바란다. <br>
+            우리 손에 이 도시의 아침이 달려있으니까. 
+            알겠지? 자, 출발하자.
+        </div>
+        <div class="quest-section">
+            <div class="quest-section-title">퀘스트 조건</div>
+            <div class="quest-item">
+                <!-- <img src="icon1.png" alt="Icon"> -->
+                <span>사장이 주는 미션을 완료하십쇼.</span>
+            </div>
+        </div>
+    
+        <div class="quest-section">
+            <div class="quest-section-title">퀘스트 보상</div>
+            <ul id="quest-conditions">
+                <li class="quest-item">
+                    <!-- <img src="icon1.png" alt="Icon" class="item-icon"> 아이콘 이미지 -->
+                    <span>💵 배달당 현금 : 5,000,000</span>
+                </li>
+            </ul>
+        </div>
+        
+    
+        <button id="claim-reward-button" class="reward-button">보상 받기</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

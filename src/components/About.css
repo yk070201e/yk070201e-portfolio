@@ -1,0 +1,115 @@
+.about {
+  min-height: 100vh;
+  padding: 100px 0;
+  background: #ffffff;
+  width: 100vw;
+  margin: 0;
+}
+
+.about-container {
+  max-width: 1400px;
+  width: 100%;
+  padding: 0;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.about-title {
+  font-size: 3rem;
+  color: #1a1a1a;
+  margin-bottom: 80px;
+  font-weight: 700;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 100%;
+  margin: 0;
+  padding: 20px;
+}
+
+.about-card {
+  background: white;
+  border: none;
+  border-radius: 20px;
+  padding: 40px;
+  transition: all 0.4s ease;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transform: scale(1);
+}
+
+.about-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+}
+
+.about-card h3 {
+  font-size: 1.6rem;
+  margin-bottom: 24px;
+  color: #1a1a1a;
+  font-weight: 600;
+  border-bottom: 3px solid #f8f9fa;
+  padding-bottom: 16px;
+}
+
+.about-card ul {
+  list-style: none;
+  text-align: left;
+}
+
+.about-card li {
+  padding: 12px 0;
+  border-bottom: 1px solid #f8f9fa;
+  font-size: 1.1rem;
+  color: #495057;
+  line-height: 1.6;
+}
+
+.about-card li:last-child {
+  border-bottom: none;
+}
+
+.resume-download {
+  text-align: center;
+}
+
+.download-btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  padding: 16px 32px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 16px;
+}
+
+.download-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+}
+
+.resume-download p {
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+@media (max-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  
+  .about-title {
+    font-size: 2.5rem;
+  }
+  
+  .about-card {
+    padding: 30px;
+  }
+}

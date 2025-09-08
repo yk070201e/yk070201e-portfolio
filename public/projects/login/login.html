@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>한봄고등학교 로그인</title>
+  <link rel="stylesheet" href="Auth.css" />
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-card">
+      <div class="login-logo-section">
+        <img src="/public/projects/login/logo.png" alt="한봄고등학교 로고" class="login-school-logo" />
+        <!-- <h2>HANBOMHIGHSCHOOL</h2> -->
+      </div>
+      <div class="login-form-section">
+        <div class="login-header">
+          <h1>로그인</h1>
+          <p>한봄고등학교 학생종합정보시스템</p>
+        </div>
+
+        <form class="login-form">
+          <!-- 오류 메시지 -->
+          <div class="error-message" style="display:none;">⚠️ 오류 메시지</div>
+
+          <div class="login-form-group login-floating-group">
+            <input
+              type="text"
+              id="username"
+              name="username"
+              required
+              autocomplete="username"
+            />
+            <label for="username">아이디</label>
+          </div>
+
+          <div class="login-form-group login-floating-group">
+            <input
+              type="password"
+              id="password"
+              name="password"
+              required
+              autocomplete="current-password"
+            />
+            <label for="password">비밀번호</label>
+          </div>
+
+          <button type="submit" class="login-button">
+            로그인
+          </button>
+        </form>
+
+        <div class="login-links">
+          아직 계정이 없으신가요?
+          <button class="login-link-button">회원가입</button>
+        </div>
+
+        <!--
+        <div class="login-help">
+          <div class="help-item">
+            <span class="help-icon">💡</span>
+            <div class="help-text">
+              <strong>초기 비밀번호</strong>
+              <p>생년월일 8자리 (YYYYMMDD)</p>
+            </div>
+          </div>
+          <div class="help-item">
+            <span class="help-icon">🔒</span>
+            <div class="help-text">
+              <strong>보안 안내</strong>
+              <p>로그인 후 반드시 비밀번호를 변경해주세요</p>
+            </div>
+          </div>
+        </div>
+        -->
+      </div>
+    </div>
+  </div>
+</body>
+</html>

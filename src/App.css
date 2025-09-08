@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  transition: all 0.3s ease;
+}
+
+body.dark {
+  background: #1a1a1a;
+  color: #ffffff;
+}
+
+.app {
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.app.dark {
+  background: #1a1a1a;
+  color: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* 다크모드 전역 스타일 */
+.dark .portfolio {
+  background: #2d2d2d !important;
+}
+
+.dark .video {
+  background: #1a1a1a !important;
+}
+
+.dark .design {
+  background: #2d2d2d !important;
+}
+
+.dark .about {
+  background: #1a1a1a !important;
+}
+
+.dark .portfolio-title,
+.dark .video-title,
+.dark .design-title,
+.dark .about-title {
+  color: #ffffff !important;
+}
+
+.dark .portfolio-item,
+.dark .video-item,
+.dark .design-item,
+.dark .about-card {
+  background: #3d3d3d !important;
+  border: 1px solid #555 !important;
+}
+
+.dark .about-card li {
+  color: #cccccc !important;
+  border-bottom-color: #555 !important;
+}
+
+.dark .about-card h3 {
+  color: #ffffff !important;
+  border-bottom-color: #555 !important;
+}
