@@ -255,6 +255,32 @@
   color: var(--text-secondary);
 }
 
+/* Light Mode - Ensure text visibility */
+.about {
+  background: var(--background-primary);
+}
+
+.about .profile-name,
+.about .experience-title,
+.about .tools-title,
+.about .contact-title {
+  color: var(--text-primary);
+}
+
+.about .profile-description,
+.about .timeline-description,
+.about .contact-info p {
+  color: var(--text-secondary);
+}
+
+.about .profile-title {
+  color: var(--primary-color);
+}
+
+.about .timeline-period {
+  color: var(--primary-color);
+}
+
 /* Dark Mode */
 body.dark .about {
   background: var(--dark-bg-primary);
