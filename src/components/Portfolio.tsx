@@ -104,9 +104,9 @@ const Portfolio = () => {
   }
 
   return (
-    <section className="portfolio">
-      <div className="portfolio-container">
-        <h2 className="portfolio-title">개발 프로젝트</h2>
+    <section className="portfolio" id="portfolio">
+      <div className="container">
+        <h2 className="section-title">개발 프로젝트</h2>
         <div className="portfolio-grid">
           {portfolioItems.map((item) => (
             <div key={item.id} className="portfolio-item">

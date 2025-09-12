@@ -9,25 +9,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <aside>
+    <!-- <aside>
         <a href="https://github.com/yk070201e/yk070201e">
             <span class="adBox">바로가기</span>
             <span>2025년 09월15일 ~ ?????</span>
         </a>
-    </aside>
+    </aside> -->
     <!-- Header -->
     <header class="header">
         <div class="container">
             <div class="logo">
-                <img src="img/LOGO.png" alt="DOLPHIN Logo" class="logo-image">
-                <!-- <span class="logo-text">RELIFE</span> -->
+                <img src="img/LOGO.png" alt="RELIFE Logo" class="logo-image">
+                <span class="logo-text">RELIFE</span>
             </div>
             <nav class="nav">
-                <a href="#" class="nav-link">서버소개</a>
-                <a href="./page/news.html" class="nav-link">새로운 소식</a>
-                <a href="#" class="nav-link">자료실</a>
-                <a href="#" class="nav-link">다운로드</a>
-                <a href="#" class="nav-link">가이드 <i class="fas fa-external-link-alt"></i></a>
+                <a href="./page/server/server.html" class="nav-link">서버소개</a>
+                <a href="./page/news/news.html" class="nav-link">새로운 소식</a>
+                <a href="./page/library/library.html" class="nav-link">자료실</a>
+                <a href="./page/guide/guide.html" class="nav-link">가이드 <i class="fas fa-external-link-alt"></i></a>
                 <a href="#" class="nav-link">지원센터 <i class="fas fa-external-link-alt"></i></a>
             </nav>
             <button class="play-btn">PLAY</button>
@@ -42,8 +41,64 @@
         </div>
         <div class="hero-content">
             <h1 class="hero-title">리라이프, 새로운 세상</h1>
-            <p class="hero-subtitle">제2의 삶을 플레이하세요.</p>
-            <button class="hero-play-btn">PLAY</button>
+            <p class="hero-subtitle">제2의 삶을 플레이하세요. 현실적인 롤플레이와 다양한 직업, 풍부한 경제 시스템을 경험해보세요.</p>
+            <div class="hero-buttons">
+                <button class="hero-play-btn">PLAY NOW</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="features-header">
+                <h2 class="features-title">왜 리라이프인가?</h2>
+                <p class="features-description">리라이프만의 특별한 특징들을 확인해보세요</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="feature-title">현실적인 롤플레이</h3>
+                    <p class="feature-description">다양한 직업과 역할을 통해 현실적인 삶을 체험하고, 다른 플레이어들과 의미있는 상호작용을 즐기세요.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3 class="feature-title">풍부한 직업 시스템</h3>
+                    <p class="feature-description">경찰, 의사, 정비사, 사업가 등 50가지 이상의 직업으로 다양한 경험을 쌓아보세요.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="feature-title">발전된 경제 시스템</h3>
+                    <p class="feature-description">은행, 부동산, 사업 운영을 통해 현실적인 경제 활동을 경험하고 부를 축적하세요.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="feature-title">안정적인 서버</h3>
+                    <p class="feature-description">24시간 안정적인 서버 운영과 전문적인 관리팀이 항상 여러분을 지원합니다.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3 class="feature-title">다양한 교통수단</h3>
+                    <p class="feature-description">자동차, 오토바이, 자전거 등 다양한 교통수단으로 자유롭게 이동하세요.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3 class="feature-title">개인화된 주거</h3>
+                    <p class="feature-description">아파트, 단독주택 등 다양한 주거 옵션으로 나만의 공간을 꾸며보세요.</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -55,71 +110,66 @@
                 <p class="news-description">리라이프의 새로운 소식, 업데이트 소식을 확인해보세요.</p>
             </div>
             <div class="news-slider-container">
-                <div class="news-slider">
-
-                    <div class="news-card">
-                        <div class="news-image">
-                            <img src="./img/Jason_Duval_04.jpg" alt="공지사항">
-                            <div class="news-tag">공지</div>
-                        </div>
-                        <div class="news-content">
-                            <h3 class="news-card-title">정기 점검 서비스 안내</h3>
-                            <p>자세한 내용은 홈페이지 새로운 소식 또는 디스코드를 확인해주세요.</p>
-                            <p class="news-date">2023-06-13</p>
-                        </div>
-                    </div>
-
-                    <div class="news-card">
-                        <div class="news-image">
-                            <img src="./img/Jason_Duval_03.jpg" alt="업데이트">
-                            <div class="news-tag">업데이트</div>
-                        </div>
-                        <div class="news-content">
-                            <h3 class="news-card-title">서버 안정성 개선 및 버그 수정</h3>
-                            <p>자세한 내용은 홈페이지 새로운 소식 또는 디스코드를 확인해주세요.</p>
-                            <p class="news-date">2023-06-14</p>
-                        </div>
-                    </div>
-
-                    <div class="news-card">
-                        <div class="news-image">
-                            <img src="./img/Jason_Duval_02.jpg" alt="업데이트">
-                            <div class="news-tag">업데이트</div>
-                        </div>
-                        <div class="news-content">
-                            <h3 class="news-card-title">신규 UI 디자인 및 기능</h3>
-                            <p>자세한 내용은 홈페이지 새로운 소식 또는 디스코드를 확인해주세요.</p>
-                            <p class="news-date">2023-06-14</p>
-                        </div>
-                    </div>
-
-                    <div class="news-card">
-                        <div class="news-image">
-                            <img src="./img/Jason_Duval_01.jpg" alt="여름 이벤트">
-                            <div class="news-tag">이벤트</div>
-                        </div>
-                        <div class="news-content">
-                            <h3 class="news-card-title">정기 이벤트 및 특별 보상 안내</h3>
-                            <p>자세한 내용은 홈페이지 새로운 소식 또는 디스코드를 확인해주세요.</p>
-                            <p class="news-date">2023-06-14</p>
-                        </div>
-                    </div>
-                    <!--  -->
-                    <div class="news-card">
-                        <div class="news-image">
-                            <img src="./img/Jason_Duval_04.jpg" alt="공지사항">
-                            <div class="news-tag">공지</div>
-                        </div>
-                        <div class="news-content">
-                            <h3 class="news-card-title">정기 점검 서비스 안내</h3>
-                            <p>자세한 내용은 홈페이지 새로운 소식 또는 디스코드를 확인해주세요.</p>
-                            <p class="news-date">2024-06-13</p>
-                        </div>
-                    </div>
+                <div class="news-slider" id="newsSlider">
+                    <!-- 뉴스 카드들이 동적으로 생성됩니다 -->
                 </div>
                 <div class="slider-dots">
                     <span class="dot active" data-slide="0"></span>
                     <span class="dot" data-slide="1"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="testimonials-header">
+                <h2 class="testimonials-title">플레이어들의 이야기</h2>
+                <p class="testimonials-description">리라이프를 경험한 플레이어들의 생생한 후기를 들어보세요</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">"리라이프에서 경찰로 일하면서 정말 현실적인 경험을 할 수 있었어요. 다른 서버와는 완전히 다른 수준의 롤플레이입니다!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="img/Vice_City_06.jpg" alt="플레이어 아바타">
+                        </div>
+                        <div class="author-info">
+                            <h4 class="author-name">김경찰</h4>
+                            <p class="author-role">경찰 직업</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">"사업을 시작해서 정비소를 운영하고 있는데, 경제 시스템이 정말 현실적이에요. 돈을 벌고 투자하는 재미가 쏠쏠합니다!</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="img/Raul_Bautista_02.jpg" alt="플레이어 아바타">
+                        </div>
+                        <div class="author-info">
+                            <h4 class="author-name">이사장</h4>
+                            <p class="author-role">사업가</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p class="testimonial-text">"리라이프, 서버는 저희가 만들어가는게 아닌 유저와 함께 만들어가는 서버입니다. 저희만 믿고 따라만 와주세요!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="img/ASD.png" alt="플레이어 아바타">
+                        </div>
+                        <div class="author-info">
+                            <h4 class="author-name">리라이프</h4>
+                            <p class="author-role">서버 운영자</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -130,7 +180,7 @@
         <div class="container">
             <div class="footer-left">
                 <div class="footer-logo">
-                    <img src="img/ASD.png" alt="DOLPHIN Logo" class="footer-logo-image">
+                    <img src="img/ASD.png" alt="RELIFE Logo" class="footer-logo-image">
                     <span class="footer-logo-text">RELIFE</span>
                 </div>
                 <p class="copyright">Copyright © JUNG YOUN KI.Development All Rights Reserved</p>
@@ -141,7 +191,7 @@
                     <span class="separator">|</span>
                     <a href="#" class="footer-link">운영방침</a>
                     <span class="separator">|</span>
-                    <a href="#" class="footer-link">돌핀 고객센터</a>
+                    <a href="#" class="footer-link">고객센터</a>
                 </div>
             </div>
             <div class="footer-right">
@@ -160,6 +210,7 @@
         </div>
     </footer>
 
+    <script src="news-data.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

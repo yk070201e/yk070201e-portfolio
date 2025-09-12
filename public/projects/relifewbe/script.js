@@ -53,9 +53,57 @@ document.addEventListener('DOMContentLoaded', function() {
     // News Slider Functionality
     const initNewsSlider = () => {
         const slider = document.querySelector('.news-slider');
+        
+        if (!slider) return;
+        
+        // 뉴스 데이터를 사용하여 카드 생성
+        const createNewsCards = () => {
+            slider.innerHTML = '';
+            
+            // 최신 6개 뉴스만 표시
+            const latestNews = newsData.slice(0, 6);
+            
+            latestNews.forEach((item, index) => {
+                const newsCard = document.createElement('div');
+                newsCard.className = 'news-card';
+                
+                // 뉴스 카드에서는 마크다운 변환 없이 일반 텍스트만 표시
+                const previewText = item.content
+                    .replace(/^#+\s*/gm, '') // 제목 마크다운 제거
+                    .replace(/^- /gm, '• ') // - 를 • 로 변환 (미리보기용)
+                    .replace(/\*\*(.*?)\*\*/g, '$1') // ** 제거
+                    .substring(0, 80) + '...';
+                
+                newsCard.innerHTML = `
+                    <div class="news-image">
+                        <img src="${item.image}" alt="${item.title}" loading="lazy" />
+                        <div class="news-tag" style="background-color: ${item.tagColor || 'rgba(74, 144, 226, 0.9)'}">${item.tag}</div>
+                    </div>
+                    <div class="news-content">
+                        <h3 class="news-card-title">${item.title}</h3>
+                        <p>${previewText}</p>
+                        <div class="news-meta">
+                            <span class="news-author">${item.author.name}</span>
+                            <span class="news-date">${item.date}</span>
+                        </div>
+                    </div>
+                `;
+                
+                // 클릭 시 뉴스 페이지로 이동
+                newsCard.addEventListener('click', () => {
+                    window.location.href = './page/news/news.html';
+                });
+                
+                slider.appendChild(newsCard);
+            });
+        };
+        
+        // 카드 생성
+        createNewsCards();
+        
         const cards = document.querySelectorAll('.news-card');
         
-        if (!slider || !cards.length) return;
+        if (!cards.length) return;
         
         let currentSlide = 0;
         const cardsPerSlide = 4;

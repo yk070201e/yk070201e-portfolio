@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가이드 - RELIFEWBE</title>
+    <link rel="stylesheet" href="guide.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="../../img/LOGO.png" alt="RELIFE Logo" class="logo-image">
+            </div>
+            <nav class="nav">
+                <a href="../server/server.html" class="nav-link">서버소개</a>
+                <a href="../news/news.html" class="nav-link">새로운 소식</a>
+                <a href="../library/library.html" class="nav-link">자료실</a>
+                <a href="#" class="nav-link active">가이드 <i class="fas fa-external-link-alt"></i></a>
+                <a href="#" class="nav-link">지원센터 <i class="fas fa-external-link-alt"></i></a>
+            </nav>
+            <button class="play-btn">PLAY</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="cityscape"></div>
+            <div class="car-blur"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">가이드</h1>
+            <p class="hero-subtitle">리라이프 서버를 즐기기 위한 모든 정보를 확인하세요</p>
+        </div>
+    </section>
+
+    <!-- Guide Section -->
+    <section class="guide">
+        <div class="container">
+            <!-- Guide Navigation -->
+            <div class="guide-nav">
+                <button class="guide-tab active" data-category="all">전체</button>
+                <button class="guide-tab" data-category="beginner">초보자</button>
+                <button class="guide-tab" data-category="gameplay">게임플레이</button>
+                <button class="guide-tab" data-category="jobs">직업</button>
+                <button class="guide-tab" data-category="economy">경제</button>
+                <button class="guide-tab" data-category="community">커뮤니티</button>
+            </div>
+
+            <!-- Guide Content -->
+            <div class="guide-content">
+                <div class="guide-grid">
+                    <!-- 초보자 가이드 -->
+                    <div class="guide-item" data-category="beginner">
+                        <div class="guide-icon">
+                            <i class="fas fa-user-plus"></i>
+                        </div>
+                        <div class="guide-info">
+                            <h3 class="guide-title">신규 플레이어 가이드</h3>
+                            <p class="guide-description">리라이프 서버에 처음 오신 분들을 위한 완전한 가이드입니다.</p>
+                            <div class="guide-meta">
+                                <span class="guide-category">초보자</span>
+                                <span class="guide-time">5분 읽기</span>
+                            </div>
+                        </div>
+                        <button class="guide-btn">
+                            <i class="fas fa-book-open"></i>
+                            읽기
+                        </button>
+                    </div>
+
+                    <!-- 게임플레이 가이드 -->
+                    <div class="guide-item" data-category="gameplay">
+                        <div class="guide-icon">
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                        <div class="guide-info">
+                            <h3 class="guide-title">기본 조작법</h3>
+                            <p class="guide-description">게임 내 모든 조작법과 단축키를 익혀보세요.</p>
+                            <div class="guide-meta">
+                                <span class="guide-category">게임플레이</span>
+                                <span class="guide-time">3분 읽기</span>
+                            </div>
+                        </div>
+                        <button class="guide-btn">
+                            <i class="fas fa-book-open"></i>
+                            읽기
+                        </button>
+                    </div>
+
+                    <!-- 직업 가이드 -->
+                    <div class="guide-item" data-category="jobs">
+                        <div class="guide-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <div class="guide-info">
+                            <h3 class="guide-title">직업 선택 가이드</h3>
+                            <p class="guide-description">다양한 직업의 특징과 역할을 알아보세요.</p>
+                            <div class="guide-meta">
+                                <span class="guide-category">직업</span>
+                                <span class="guide-time">7분 읽기</span>
+                            </div>
+                        </div>
+                        <button class="guide-btn">
+                            <i class="fas fa-book-open"></i>
+                            읽기
+                        </button>
+                    </div>
+
+                    <!-- 경제 가이드 -->
+                    <div class="guide-item" data-category="economy">
+                        <div class="guide-icon">
+                            <i class="fas fa-coins"></i>
+                        </div>
+                        <div class="guide-info">
+                            <h3 class="guide-title">경제 시스템</h3>
+                            <p class="guide-description">돈을 벌고 사용하는 방법을 알아보세요.</p>
+                            <div class="guide-meta">
+                                <span class="guide-category">경제</span>
+                                <span class="guide-time">4분 읽기</span>
+                            </div>
+                        </div>
+                        <button class="guide-btn">
+                            <i class="fas fa-book-open"></i>
+                            읽기
+                        </button>
+                    </div>
+
+                    <!-- 커뮤니티 가이드 -->
+                    <div class="guide-item" data-category="community">
+                        <div class="guide-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="guide-info">
+                            <h3 class="guide-title">커뮤니티 가이드</h3>
+                            <p class="guide-description">다른 플레이어들과 소통하는 방법을 알아보세요.</p>
+                            <div class="guide-meta">
+                                <span class="guide-category">커뮤니티</span>
+                                <span class="guide-time">3분 읽기</span>
+                            </div>
+                        </div>
+                        <button class="guide-btn">
+                            <i class="fas fa-book-open"></i>
+                            읽기
+                        </button>
+                    </div>
+
+                    <!-- 문제 해결 가이드 -->
+                    <div class="guide-item" data-category="beginner">
+                        <div class="guide-icon">
+                            <i class="fas fa-question-circle"></i>
+                        </div>
+                        <div class="guide-info">
+                            <h3 class="guide-title">문제 해결</h3>
+                            <p class="guide-description">자주 발생하는 문제들과 해결 방법을 확인하세요.</p>
+                            <div class="guide-meta">
+                                <span class="guide-category">초보자</span>
+                                <span class="guide-time">5분 읽기</span>
+                            </div>
+                        </div>
+                        <button class="guide-btn">
+                            <i class="fas fa-book-open"></i>
+                            읽기
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-left">
+                <div class="footer-logo">
+                    <img src="../../img/ASD.png" alt="RELIFE Logo" class="footer-logo-image">
+                    <span class="footer-logo-text">RELIFE</span>
+                </div>
+                <p class="copyright">Copyright © JUNG YOUN KI.Development All Rights Reserved</p>
+            </div>
+            <div class="footer-center">
+                <div class="footer-links">
+                    <a href="#" class="footer-link">개인정보 처리방침</a>
+                    <span class="separator">|</span>
+                    <a href="#" class="footer-link">운영방침</a>
+                    <span class="separator">|</span>
+                    <a href="#" class="footer-link">고객센터</a>
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="social-icons">
+                    <a href="#" class="social-icon discord">
+                        <i class="fab fa-discord"></i>
+                    </a>
+                    <a href="#" class="social-icon youtube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="#" class="social-icon email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="guide.js"></script>
+</body>
+</html>

@@ -304,9 +304,9 @@ const Design = () => {
   }
 
   return (
-    <section className="design">
-      <div className="design-container">
-        <h2 className="design-title">디자인 작업</h2>
+    <section className="design" id="design">
+      <div className="container">
+        <h2 className="section-title">디자인 작업</h2>
         <div className="design-grid">
           {designItems.map((item) => (
             <div 

@@ -1,77 +1,81 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
-  line-height: 1.6;
-  color: #333;
-  overflow-x: hidden;
-  margin: 0;
-  padding: 0;
-  width: 100vw;
-  transition: all 0.3s ease;
-}
-
-body.dark {
-  background: #1a1a1a;
-  color: #ffffff;
-}
-
 .app {
   width: 100%;
-  transition: all 0.3s ease;
+  min-height: 100vh;
+  transition: all var(--transition-normal);
+  background: var(--background-primary);
+  color: var(--text-primary);
 }
 
-.app.dark {
-  background: #1a1a1a;
-  color: #ffffff;
+/* Section Base Styles */
+section {
+  width: 100%;
+  padding: var(--spacing-4xl) 0;
+  position: relative;
 }
 
-html {
-  scroll-behavior: smooth;
+section:nth-child(even) {
+  background: var(--background-secondary);
 }
 
-/* 다크모드 전역 스타일 */
-.dark .portfolio {
-  background: #2d2d2d !important;
+section:nth-child(odd) {
+  background: var(--background-primary);
 }
 
-.dark .video {
-  background: #1a1a1a !important;
+/* Container */
+.container {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 var(--spacing-lg);
 }
 
-.dark .design {
-  background: #2d2d2d !important;
+/* Section Titles */
+.section-title {
+  font-size: var(--font-size-5xl);
+  font-weight: var(--font-weight-bold);
+  text-align: center;
+  margin-bottom: var(--spacing-4xl);
+  color: var(--text-primary);
+  position: relative;
 }
 
-.dark .about {
-  background: #1a1a1a !important;
+
+/* Dark Mode Section Styles */
+body.dark section:nth-child(even) {
+  background: var(--dark-bg-secondary);
 }
 
-.dark .portfolio-title,
-.dark .video-title,
-.dark .design-title,
-.dark .about-title {
-  color: #ffffff !important;
+body.dark section:nth-child(odd) {
+  background: var(--dark-bg-primary);
 }
 
-.dark .portfolio-item,
-.dark .video-item,
-.dark .design-item,
-.dark .about-card {
-  background: #3d3d3d !important;
-  border: 1px solid #555 !important;
+body.dark .section-title {
+  color: var(--dark-text-primary);
 }
 
-.dark .about-card li {
-  color: #cccccc !important;
-  border-bottom-color: #555 !important;
+/* Responsive Design */
+@media (max-width: 768px) {
+  section {
+    padding: var(--spacing-3xl) 0;
+  }
+  
+  .container {
+    padding: 0 var(--spacing-md);
+  }
+  
+  .section-title {
+    font-size: var(--font-size-3xl);
+    margin-bottom: var(--spacing-3xl);
+  }
 }
 
-.dark .about-card h3 {
-  color: #ffffff !important;
-  border-bottom-color: #555 !important;
+@media (max-width: 480px) {
+  section {
+    padding: var(--spacing-2xl) 0;
+  }
+  
+  .section-title {
+    font-size: var(--font-size-2xl);
+    margin-bottom: var(--spacing-2xl);
+  }
 }

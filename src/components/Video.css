@@ -1,63 +1,29 @@
 .video {
-  min-height: 100vh;
-  padding: 100px 0;
-  background: #ffffff;
-  width: 100vw;
-  margin: 0;
-}
-
-.video-container {
-  max-width: 1400px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0;
-  text-align: center;
-}
-
-.video-title {
-  font-size: 3rem;
-  color: #1a1a1a;
-  margin-bottom: 80px;
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-}
-
-.video-label {
-  background: rgba(0, 0, 0, 0.7);
-  color: white;
-  padding: 8px 16px;
-  border-radius: 20px;
-  font-size: 1.2rem;
-  font-weight: 600;
-  letter-spacing: 1px;
+  background: var(--background-primary);
 }
 
 .video-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  width: 100%;
-  margin: 0;
-  padding: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: var(--spacing-xl);
+  margin-top: var(--spacing-4xl);
 }
 
 .video-item {
-  background: white;
-  border-radius: 20px;
+  background: var(--background-primary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-2xl);
   overflow: hidden;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-  transition: all 0.4s ease;
+  box-shadow: 0 8px 25px var(--shadow-light);
+  transition: all var(--transition-normal);
   cursor: pointer;
   transform: scale(1);
 }
 
 .video-item:hover {
   transform: translateY(-12px) scale(1.02);
-  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
-  border-radius: 25px;
+  box-shadow: 0 25px 50px var(--shadow-dark);
+  border-radius: var(--radius-2xl);
 }
 
 .video-card {

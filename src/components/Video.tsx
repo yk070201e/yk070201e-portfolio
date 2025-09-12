@@ -60,12 +60,9 @@ const Video = () => {
   }
 
   return (
-    <section className="video">
-      <div className="video-container">
-        <h2 className="video-title">
-          {/* <span className="video-label">VIDEO</span> */}
-          영상 작업
-        </h2>
+    <section className="video" id="video">
+      <div className="container">
+        <h2 className="section-title">영상 작업</h2>
         <div className="video-grid">
           {videoItems.map((item) => (
             <div 
