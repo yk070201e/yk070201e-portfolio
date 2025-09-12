@@ -150,20 +150,24 @@
 
 /* Light Mode - Ensure proper colors */
 .nav-header {
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(255, 255, 255, 0.95) !important;
   border-bottom-color: var(--border-color);
 }
 
 .nav-logo {
-  color: var(--text-primary);
+  color: var(--text-primary) !important;
+}
+
+.nav-logo span {
+  color: var(--text-primary) !important;
 }
 
 .nav-menu a {
-  color: var(--text-secondary);
+  color: var(--text-secondary) !important;
 }
 
 .nav-menu a:hover {
-  color: var(--primary-color);
+  color: var(--primary-color) !important;
 }
 
 /* Dark Mode Navigation */

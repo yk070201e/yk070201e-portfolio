@@ -257,28 +257,36 @@
 
 /* Light Mode - Ensure text visibility */
 .about {
-  background: var(--background-primary);
+  background: var(--background-primary) !important;
 }
 
 .about .profile-name,
 .about .experience-title,
 .about .tools-title,
 .about .contact-title {
-  color: var(--text-primary);
+  color: var(--text-primary) !important;
 }
 
 .about .profile-description,
 .about .timeline-description,
 .about .contact-info p {
-  color: var(--text-secondary);
+  color: var(--text-secondary) !important;
 }
 
 .about .profile-title {
-  color: var(--primary-color);
+  color: var(--primary-color) !important;
 }
 
 .about .timeline-period {
-  color: var(--primary-color);
+  color: var(--primary-color) !important;
+}
+
+.about .timeline-content h4 {
+  color: var(--text-primary) !important;
+}
+
+.about .contact-info h4 {
+  color: var(--text-primary) !important;
 }
 
 /* Dark Mode */
