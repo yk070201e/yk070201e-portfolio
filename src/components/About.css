@@ -221,8 +221,26 @@
 }
 
 .contact-icon {
-  font-size: var(--font-size-2xl);
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary-color);
+  border-radius: var(--radius-lg);
   flex-shrink: 0;
+  transition: all var(--transition-normal);
+}
+
+.contact-icon svg {
+  width: 24px;
+  height: 24px;
+  color: white;
+}
+
+.contact-item:hover .contact-icon {
+  background: var(--secondary-color);
+  transform: scale(1.1);
 }
 
 .contact-info h4 {
@@ -289,6 +307,14 @@ body.dark .contact-info h4 {
 
 body.dark .contact-info p {
   color: var(--dark-text-secondary);
+}
+
+body.dark .contact-icon {
+  background: var(--primary-color);
+}
+
+body.dark .contact-item:hover .contact-icon {
+  background: var(--secondary-color);
 }
 
 /* Responsive Design */
