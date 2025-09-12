@@ -148,26 +148,26 @@
   51%, 100% { opacity: 0; }
 }
 
-/* Light Mode - Ensure proper colors */
+/* Light Mode - Force proper colors */
 .nav-header {
   background: rgba(255, 255, 255, 0.95) !important;
   border-bottom-color: var(--border-color);
 }
 
 .nav-logo {
-  color: var(--text-primary) !important;
+  color: #1a1a1a !important;
 }
 
 .nav-logo span {
-  color: var(--text-primary) !important;
+  color: #1a1a1a !important;
 }
 
 .nav-menu a {
-  color: var(--text-secondary) !important;
+  color: #666666 !important;
 }
 
 .nav-menu a:hover {
-  color: var(--primary-color) !important;
+  color: #667eea !important;
 }
 
 /* Dark Mode Navigation */
