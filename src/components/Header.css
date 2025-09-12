@@ -148,6 +148,24 @@
   51%, 100% { opacity: 0; }
 }
 
+/* Light Mode - Ensure proper colors */
+.nav-header {
+  background: rgba(255, 255, 255, 0.95);
+  border-bottom-color: var(--border-color);
+}
+
+.nav-logo {
+  color: var(--text-primary);
+}
+
+.nav-menu a {
+  color: var(--text-secondary);
+}
+
+.nav-menu a:hover {
+  color: var(--primary-color);
+}
+
 /* Dark Mode Navigation */
 body.dark .nav-header {
   background: rgba(26, 26, 26, 0.95);
