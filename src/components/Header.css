@@ -151,7 +151,12 @@
 /* Light Mode - Force proper colors */
 body.light .nav-header {
   background: rgba(255, 255, 255, 0.95) !important;
-  border-bottom-color: var(--border-color);
+  border-bottom-color: #e9ecef !important;
+}
+
+body.light .nav-header.scrolled {
+  background: rgba(255, 255, 255, 0.98) !important;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1) !important;
 }
 
 body.light .nav-logo {
@@ -160,10 +165,16 @@ body.light .nav-logo {
 
 body.light .nav-logo span {
   color: #1a1a1a !important;
+  font-weight: 700 !important;
+}
+
+body.light .nav-menu {
+  color: #1a1a1a !important;
 }
 
 body.light .nav-menu a {
   color: #666666 !important;
+  font-weight: 500 !important;
 }
 
 body.light .nav-menu a:hover {
@@ -176,11 +187,11 @@ body.light .hero {
 }
 
 body.light .hero-title {
-  color: #ffffff !important;
+  color: #000000 !important;
 }
 
 body.light .hero-subtitle {
-  color: #ffffff !important;
+  color: #000000 !important;
 }
 
 /* Dark Mode Navigation */
