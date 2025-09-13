@@ -310,70 +310,70 @@
 }
 
 /* Light Mode - Ensure proper colors */
-.portfolio {
-  background: var(--background-primary);
+body.light .portfolio {
+  background: #ffffff !important;
 }
 
-.portfolio-item {
-  background: var(--background-secondary);
-  border-color: var(--border-color);
+body.light .portfolio-item {
+  background: #f8f9fa !important;
+  border-color: #e9ecef !important;
 }
 
-.portfolio-modal {
-  background: var(--background-secondary);
-  color: var(--text-primary);
+body.light .portfolio-modal {
+  background: #f8f9fa !important;
+  color: #1a1a1a !important;
 }
 
-.modal-header {
-  border-bottom-color: var(--border-color);
+body.light .modal-header {
+  border-bottom-color: #e9ecef !important;
 }
 
-.modal-header h2 {
-  color: var(--text-primary);
+body.light .modal-header h2 {
+  color: #1a1a1a !important;
 }
 
-.modal-description {
-  color: var(--text-secondary);
+body.light .modal-description {
+  color: #666666 !important;
 }
 
-.modal-section h3 {
-  color: var(--text-primary);
+body.light .modal-section h3 {
+  color: #1a1a1a !important;
 }
 
-.info-label {
-  color: var(--text-secondary);
+body.light .info-label {
+  color: #666666 !important;
 }
 
-.info-value {
-  color: var(--text-primary);
+body.light .info-value {
+  color: #1a1a1a !important;
 }
 
-.project-summary {
-  color: var(--text-secondary);
+body.light .project-summary {
+  color: #666666 !important;
 }
 
-.modal-close-btn {
-  background: var(--background-secondary);
-  color: var(--text-primary);
+body.light .modal-close-btn {
+  background: #f8f9fa !important;
+  color: #1a1a1a !important;
 }
 
-.modal-close-btn:hover {
-  background: var(--background-tertiary);
+body.light .modal-close-btn:hover {
+  background: #e9ecef !important;
 }
 
-.tech-tag {
-  background: var(--background-secondary);
-  color: var(--text-primary);
-  border-color: var(--border-color);
+body.light .tech-tag {
+  background: #f8f9fa !important;
+  color: #1a1a1a !important;
+  border-color: #e9ecef !important;
 }
 
-.tech-tag:hover {
-  background: var(--background-tertiary);
-  border-color: var(--text-secondary);
+body.light .tech-tag:hover {
+  background: #e9ecef !important;
+  border-color: #666666 !important;
 }
 
-.portfolio-image {
-  background-color: var(--background-secondary);
+body.light .portfolio-image {
+  background-color: #f8f9fa !important;
 }
 
 /* Dark Mode */

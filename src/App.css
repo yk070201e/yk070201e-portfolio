@@ -40,6 +40,24 @@ section:nth-child(odd) {
 }
 
 
+/* Light Mode - Force proper colors */
+body.light {
+  background: #ffffff !important;
+  color: #1a1a1a !important;
+}
+
+body.light section:nth-child(even) {
+  background: #f8f9fa !important;
+}
+
+body.light section:nth-child(odd) {
+  background: #ffffff !important;
+}
+
+body.light .section-title {
+  color: #1a1a1a !important;
+}
+
 /* Dark Mode Section Styles */
 body.dark section:nth-child(even) {
   background: var(--dark-bg-secondary);

@@ -1,5 +1,23 @@
-.video {
-  background: var(--background-primary);
+/* Light Mode - Force proper colors */
+body.light .video {
+  background: #ffffff !important;
+}
+
+body.light .video-title {
+  color: #1a1a1a !important;
+}
+
+body.light .video-item {
+  background: #ffffff !important;
+  border-color: #e9ecef !important;
+}
+
+body.light .video-title-text {
+  color: #ffffff !important;
+}
+
+body.light .video-description {
+  color: #ffffff !important;
 }
 
 .video-grid {

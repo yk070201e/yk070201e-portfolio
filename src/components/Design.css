@@ -1,5 +1,65 @@
-.design {
-  background: var(--background-secondary);
+/* Light Mode - Force proper colors */
+body.light .design {
+  background: #f8f9fa !important;
+}
+
+body.light .design-title {
+  color: #1a1a1a !important;
+}
+
+body.light .design-item {
+  background: #ffffff !important;
+  border-color: #e9ecef !important;
+}
+
+body.light .design-modal {
+  background: #ffffff !important;
+  color: #1a1a1a !important;
+}
+
+body.light .modal-header h2 {
+  color: #1a1a1a !important;
+}
+
+body.light .modal-description {
+  color: #666666 !important;
+}
+
+body.light .modal-section h3 {
+  color: #1a1a1a !important;
+}
+
+body.light .info-label {
+  color: #666666 !important;
+}
+
+body.light .info-value {
+  color: #1a1a1a !important;
+}
+
+body.light .design-purpose,
+body.light .design-summary {
+  color: #666666 !important;
+}
+
+body.light .modal-close-btn {
+  background: #f8f9fa !important;
+  color: #1a1a1a !important;
+}
+
+body.light .modal-close-btn:hover {
+  background: #e9ecef !important;
+}
+
+body.light .tool-tag {
+  background: #f8f9fa !important;
+  color: #1a1a1a !important;
+  border-color: #e9ecef !important;
+}
+
+body.light .tool-tag:hover {
+  background: #e9ecef !important;
+  border-color: #666666 !important;
 }
 
 .design-grid {

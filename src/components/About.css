@@ -256,36 +256,36 @@
 }
 
 /* Light Mode - Force text visibility */
-.about {
+body.light .about {
   background: #ffffff !important;
 }
 
-.about .profile-name,
-.about .experience-title,
-.about .tools-title,
-.about .contact-title {
+body.light .about .profile-name,
+body.light .about .experience-title,
+body.light .about .tools-title,
+body.light .about .contact-title {
   color: #1a1a1a !important;
 }
 
-.about .profile-description,
-.about .timeline-description,
-.about .contact-info p {
+body.light .about .profile-description,
+body.light .about .timeline-description,
+body.light .about .contact-info p {
   color: #666666 !important;
 }
 
-.about .profile-title {
+body.light .about .profile-title {
   color: #667eea !important;
 }
 
-.about .timeline-period {
+body.light .about .timeline-period {
   color: #667eea !important;
 }
 
-.about .timeline-content h4 {
+body.light .about .timeline-content h4 {
   color: #1a1a1a !important;
 }
 
-.about .contact-info h4 {
+body.light .about .contact-info h4 {
   color: #1a1a1a !important;
 }
 

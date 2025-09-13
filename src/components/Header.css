@@ -149,24 +149,24 @@
 }
 
 /* Light Mode - Force proper colors */
-.nav-header {
+body.light .nav-header {
   background: rgba(255, 255, 255, 0.95) !important;
   border-bottom-color: var(--border-color);
 }
 
-.nav-logo {
+body.light .nav-logo {
   color: #1a1a1a !important;
 }
 
-.nav-logo span {
+body.light .nav-logo span {
   color: #1a1a1a !important;
 }
 
-.nav-menu a {
+body.light .nav-menu a {
   color: #666666 !important;
 }
 
-.nav-menu a:hover {
+body.light .nav-menu a:hover {
   color: #667eea !important;
 }
 
