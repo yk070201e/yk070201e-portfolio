@@ -170,6 +170,19 @@ body.light .nav-menu a:hover {
   color: #667eea !important;
 }
 
+/* Hero Section Light Mode */
+body.light .hero {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+}
+
+body.light .hero-title {
+  color: #ffffff !important;
+}
+
+body.light .hero-subtitle {
+  color: #ffffff !important;
+}
+
 /* Dark Mode Navigation */
 body.dark .nav-header {
   background: rgba(26, 26, 26, 0.95);
