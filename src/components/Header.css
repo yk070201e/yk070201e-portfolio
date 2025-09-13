@@ -22,11 +22,14 @@
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: var(--spacing-md) var(--spacing-lg);
+  position: relative;
 }
 
 .nav-logo {
+  position: absolute;
+  left: var(--spacing-lg);
   display: flex;
   align-items: center;
   gap: var(--spacing-sm);
@@ -216,6 +219,10 @@ body.dark .nav-menu a:hover {
 @media (max-width: 768px) {
   .nav-container {
     padding: var(--spacing-sm) var(--spacing-md);
+  }
+  
+  .nav-logo {
+    left: var(--spacing-md);
   }
   
   .nav-menu {
