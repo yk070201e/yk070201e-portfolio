@@ -20,6 +20,11 @@ body.light .video-description {
   color: #ffffff !important;
 }
 
+/* Video section title */
+body.light .video h2 {
+  color: #1a1a1a !important;
+}
+
 .video-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));

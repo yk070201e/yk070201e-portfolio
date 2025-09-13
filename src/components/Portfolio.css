@@ -376,6 +376,11 @@ body.light .portfolio-image {
   background-color: #f8f9fa !important;
 }
 
+/* Portfolio section title */
+body.light .portfolio h2 {
+  color: #1a1a1a !important;
+}
+
 /* Dark Mode */
 body.dark .portfolio {
   background: var(--dark-bg-secondary);

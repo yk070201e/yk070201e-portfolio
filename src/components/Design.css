@@ -62,6 +62,11 @@ body.light .tool-tag:hover {
   border-color: #666666 !important;
 }
 
+/* Design section title */
+body.light .design h2 {
+  color: #1a1a1a !important;
+}
+
 .design-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
