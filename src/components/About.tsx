@@ -33,8 +33,12 @@ const About = () => {
                 <div className="timeline-dot"></div>
                 <div className="timeline-content">
                   <h4>한봄고등학교 재학중</h4>
-                  <p className="timeline-period">2023.03 ~ 현재</p>
-                  <p className="timeline-description">클라우드컴퓨팅전공심화 과정 수료</p>
+                  <p className="timeline-period">2023.03 ~ 12.01</p>
+                  <p className="timeline-description">클라우드컴퓨팅전공심화 과정 수료 (2023.03 ~ 12.01)</p>
+                  <p className="timeline-description">성균관대 SW 멘토링 프로그램 (2023.05 ~ 08.01)</p>
+                  <p className="timeline-description">사이버 가디언즈 정보보안 교육 (2023.05 ~ 12)</p>
+                  <p className="timeline-description">직업계고 도약캠프 (2023, 2025)</p>
+                  <p className="timeline-description">달고나 고졸채용 박람회 참가 (2024.09)</p>
                 </div>
               </div>
               <div className="timeline-item">
@@ -48,17 +52,19 @@ const About = () => {
               <div className="timeline-item">
                 <div className="timeline-dot"></div>
                 <div className="timeline-content">
-                  <h4>경기창고 대회 참가</h4>
-                  <p className="timeline-period">2025</p>
+                  <h4>대회 참가 및 수상 경력</h4>
+                  <p className="timeline-period">2025 ~ 2026</p>
                   <p className="timeline-description">직무 추천 서비스 개발 프로젝트</p>
+                  <p className="timeline-period">서호중학교 ( 2022.05 )</p>
+                  <p className="timeline-description">유니버셜 디자인공모대회 장려상</p>
                 </div>
               </div>
               <div className="timeline-item">
                 <div className="timeline-dot"></div>
                 <div className="timeline-content">
-                  <h4>성균관대 SW 멘토링</h4>
-                  <p className="timeline-period">2023.05 ~ 08</p>
-                  <p className="timeline-description">소프트웨어 개발 멘토링 프로그램 참여</p>
+                  <h4>AWS Generative AI Essentials</h4>
+                  <p className="timeline-period">2025.07.12</p>
+                  <p className="timeline-description">AWS Generative AI Essentials 과정 수료</p>
                 </div>
               </div>
             </div>
@@ -96,7 +102,7 @@ const About = () => {
                 <div className="timeline-content">
                   <h4>Backend & Cloud</h4>
                   <p className="timeline-period">Infrastructure</p>
-                  <p className="timeline-description">AWS, MySQL, Git</p>
+                  <p className="timeline-description">MySQL, Git</p>
                 </div>
               </div>
             </div>
