@@ -20,9 +20,35 @@ body.light .video-description {
   color: #ffffff !important;
 }
 
+/* Light Mode Video Overlay Text */
+body.light .video-overlay {
+  color: #ffffff !important;
+}
+
+body.light .video-item-title {
+  color: #ffffff !important;
+}
+
+body.light .video-description {
+  color: #ffffff !important;
+}
+
+body.light .video-category {
+  color: #ffffff !important;
+}
+
+body.light .detail-btn {
+  color: #ffffff !important;
+}
+
 /* Video section title */
 body.light .video h2 {
   color: #1a1a1a !important;
+}
+
+/* Dark Mode Video Title */
+body.dark .video h2 {
+  color: #ffffff !important;
 }
 
 .video-grid {
@@ -270,8 +296,8 @@ body.light .video h2 {
 }
 
 /* 다크 테마 지원 */
-.dark .video {
-  background: #1a1a1a;
+body.dark .video {
+  background: #1a1a1a !important;
 }
 
 .dark .video-title {

@@ -1,6 +1,6 @@
 .theme-toggle-container {
   position: fixed;
-  top: var(--spacing-lg);
+  top: calc(var(--spacing-lg) - 7px);
   right: var(--spacing-xl);
   z-index: 1000;
 }
