@@ -48,15 +48,15 @@ const initLoadingScreen = () => {
     };
     
     // 로딩 시작
-    loadingInterval = setInterval(updateProgress, 200);
+    loadingInterval = setInterval(updateProgress, 100);
     
-    // 최소 로딩 시간 보장 (2초)
+    // 최소 로딩 시간 보장 (0.5초)
     setTimeout(() => {
         if (loadingProgress < 100) {
             loadingProgress = 100;
             updateProgress();
         }
-    }, 2000);
+    }, 500);
 };
 
 const hideLoadingScreen = () => {
@@ -142,7 +142,7 @@ document.addEventListener('keydown', (e) => {
         // 실제 새로고침 (약간의 지연 후)
         setTimeout(() => {
             window.location.reload();
-        }, 1500);
+        }, 800);
     }
 });
 
