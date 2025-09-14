@@ -73,7 +73,7 @@ const Portfolio = () => {
 
     {
       id: 4,
-      title: '리라이프 서버 - 웹페이지 제작',
+      title: '리라이프 - 게임 웹페이지 제작',
       description: '인생모드 서버 웹페이지 제작',
       image: '/images/design/relifewbe.png',
       type: 'image',

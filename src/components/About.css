@@ -94,7 +94,7 @@
   content: '';
   position: absolute;
   left: 30px;
-  top: 0;
+  top: 20px;
   bottom: 0;
   width: 2px;
   background: linear-gradient(180deg, var(--primary-color), var(--secondary-color));
@@ -129,6 +129,7 @@
 
 .experience-section .timeline::before {
   left: 30px;
+  top: 20px;
 }
 
 /* Tools 섹션 - 오른쪽 점들 */
@@ -145,6 +146,7 @@
 .tools-section .timeline::before {
   left: auto;
   right: 30px;
+  top: 20px;
 }
 
 .timeline-content {
@@ -376,6 +378,7 @@ body.dark .contact-item:hover .contact-icon {
   
   .experience-section .timeline::before {
     left: 20px;
+    top: 20px;
   }
   
   .experience-section .timeline-item {
@@ -388,6 +391,7 @@ body.dark .contact-item:hover .contact-icon {
   
   .tools-section .timeline::before {
     right: 20px;
+    top: 20px;
   }
   
   .tools-section .timeline-item {

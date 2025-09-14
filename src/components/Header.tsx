@@ -130,7 +130,7 @@ const Header = () => {
             <span className="cursor">|</span>
           </h1>
           <p className={`hero-subtitle ${showSubtitle ? 'show' : ''}`}>
-            저는 단순한 기능 구현을 넘어, 사용자에게 좋은 느낌(Vibe)을 주는 UI/UX 중심의 코딩을 지향합니다. 바로 그것이 제가 말하는 바이브 코딩 개발자입니다.
+            저는 단순한 기능 구현을 넘어, 사용자에게 좋은 느낌(Vibe)을 주는 UI/UX 중심의 코딩을 지향합니다.
           </p>
         </div>
       </section>
