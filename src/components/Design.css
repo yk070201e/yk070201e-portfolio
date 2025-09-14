@@ -1,6 +1,6 @@
 /* Light Mode - Force proper colors */
 body.light .design {
-  background: #f8f9fa !important;
+  background: #ffffff !important;
 }
 
 body.light .design-title {
@@ -10,11 +10,16 @@ body.light .design-title {
 body.light .design-item {
   background: #ffffff !important;
   border-color: #e9ecef !important;
+  color: #1a1a1a !important;
 }
 
 body.light .design-modal {
   background: #ffffff !important;
   color: #1a1a1a !important;
+}
+
+body.light .design-modal-overlay {
+  background: rgba(0, 0, 0, 0.7) !important;
 }
 
 body.light .modal-header h2 {
@@ -62,8 +67,61 @@ body.light .tool-tag:hover {
   border-color: #666666 !important;
 }
 
+body.light .project-link-btn {
+  background: #007bff !important;
+  color: #ffffff !important;
+}
+
+body.light .project-link-btn:hover {
+  background: #0056b3 !important;
+  color: #ffffff !important;
+}
+
+body.light .project-notice {
+  background: linear-gradient(135deg, #fff3cd 0%, #ffeaa7 100%) !important;
+  border-color: #ffc107 !important;
+}
+
+body.light .project-notice h3 {
+  color: #856404 !important;
+}
+
+body.light .notice-text {
+  color: #856404 !important;
+}
+
+/* Force text colors in light mode */
+body.light .design-item-title {
+  color: #ffffff !important;
+}
+
+body.light .design-description {
+  color: #ffffff !important;
+}
+
+body.light .detail-btn {
+  background: rgba(0, 0, 0, 0.8) !important;
+  color: #ffffff !important;
+}
+
+body.light .detail-btn:hover {
+  background: rgba(0, 0, 0, 0.9) !important;
+  color: #ffffff !important;
+}
+
+body.light .design-category {
+  background: rgba(0, 0, 0, 0.9) !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
 /* Design section title */
 body.light .design h2 {
+  color: #1a1a1a !important;
+}
+
+/* Section title for light mode */
+body.light .section-title {
   color: #1a1a1a !important;
 }
 

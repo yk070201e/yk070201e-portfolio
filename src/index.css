@@ -172,6 +172,11 @@ body.dark {
   color: var(--text-primary);
 }
 
+/* Force section title colors for light mode */
+body.light .section-title {
+  color: #1a1a1a !important;
+}
+
 /* Tablet Typography */
 @media (max-width: 1024px) {
   .container {
