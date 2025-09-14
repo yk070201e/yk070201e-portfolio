@@ -309,18 +309,19 @@
   box-shadow: 0 4px 16px rgba(0, 123, 255, 0.3);
 }
 
-/* Light Mode - Ensure proper colors */
+/* Light Mode - Force proper colors */
 body.light .portfolio {
   background: #ffffff !important;
 }
 
 body.light .portfolio-item {
-  background: #f8f9fa !important;
+  background: #ffffff !important;
   border-color: #e9ecef !important;
+  color: #1a1a1a !important;
 }
 
 body.light .portfolio-modal {
-  background: #f8f9fa !important;
+  background: #ffffff !important;
   color: #1a1a1a !important;
 }
 
@@ -372,12 +373,50 @@ body.light .tech-tag:hover {
   border-color: #666666 !important;
 }
 
+body.light .portfolio-modal-overlay {
+  background: rgba(0, 0, 0, 0.7) !important;
+}
+
+body.light .project-link-btn {
+  background: #007bff !important;
+  color: #ffffff !important;
+}
+
+body.light .project-link-btn:hover {
+  background: #0056b3 !important;
+  color: #ffffff !important;
+}
+
+/* Force text colors in light mode */
+body.light .portfolio-item-title {
+  color: #ffffff !important;
+}
+
+body.light .portfolio-description {
+  color: #ffffff !important;
+}
+
+body.light .detail-btn {
+  background: rgba(0, 0, 0, 0.8) !important;
+  color: #ffffff !important;
+}
+
+body.light .detail-btn:hover {
+  background: rgba(0, 0, 0, 0.9) !important;
+  color: #ffffff !important;
+}
+
 body.light .portfolio-image {
   background-color: #f8f9fa !important;
 }
 
 /* Portfolio section title */
 body.light .portfolio h2 {
+  color: #1a1a1a !important;
+}
+
+/* Section title for light mode */
+body.light .section-title {
   color: #1a1a1a !important;
 }
 
