@@ -1,3 +1,151 @@
+// Loading Screen Management
+let loadingProgress = 0;
+let loadingInterval;
+
+const initLoadingScreen = () => {
+    const loadingScreen = document.getElementById('loading-screen');
+    const progressBar = document.querySelector('.progress-bar');
+    const loadingMessage = document.querySelector('.loading-message');
+    
+    if (!loadingScreen) return;
+    
+    // 로딩 메시지 배열
+    const loadingMessages = [
+        '로딩 중...',
+        '서버에 연결 중...',
+        '데이터를 불러오는 중...',
+        '거의 완료되었습니다...',
+        '준비 완료!'
+    ];
+    
+    let messageIndex = 0;
+    
+    // 진행률 업데이트 함수
+    const updateProgress = () => {
+        loadingProgress += Math.random() * 15;
+        
+        if (loadingProgress > 100) {
+            loadingProgress = 100;
+        }
+        
+        if (progressBar) {
+            progressBar.style.width = loadingProgress + '%';
+        }
+        
+        // 메시지 업데이트
+        if (loadingMessage && loadingProgress > 20 * (messageIndex + 1)) {
+            messageIndex = Math.min(messageIndex + 1, loadingMessages.length - 1);
+            loadingMessage.textContent = loadingMessages[messageIndex];
+        }
+        
+        // 로딩 완료 체크
+        if (loadingProgress >= 100) {
+            clearInterval(loadingInterval);
+            setTimeout(() => {
+                hideLoadingScreen();
+            }, 500);
+        }
+    };
+    
+    // 로딩 시작
+    loadingInterval = setInterval(updateProgress, 200);
+    
+    // 최소 로딩 시간 보장 (2초)
+    setTimeout(() => {
+        if (loadingProgress < 100) {
+            loadingProgress = 100;
+            updateProgress();
+        }
+    }, 2000);
+};
+
+const hideLoadingScreen = () => {
+    const loadingScreen = document.getElementById('loading-screen');
+    if (loadingScreen) {
+        loadingScreen.classList.add('hidden');
+        
+        // 애니메이션 완료 후 DOM에서 제거
+        setTimeout(() => {
+            loadingScreen.remove();
+        }, 500);
+    }
+};
+
+// 페이지 로드 시 로딩 화면 초기화
+window.addEventListener('load', () => {
+    // 이미지 로딩 완료를 기다림
+    const images = document.querySelectorAll('img');
+    let loadedImages = 0;
+    
+    if (images.length === 0) {
+        initLoadingScreen();
+        return;
+    }
+    
+    images.forEach(img => {
+        if (img.complete) {
+            loadedImages++;
+        } else {
+            img.addEventListener('load', () => {
+                loadedImages++;
+                if (loadedImages === images.length) {
+                    initLoadingScreen();
+                }
+            });
+        }
+    });
+    
+    if (loadedImages === images.length) {
+        initLoadingScreen();
+    }
+});
+
+// F5 키 감지 및 로딩 화면 재시작
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'F5' || (e.ctrlKey && e.key === 'r')) {
+        e.preventDefault();
+        
+        // 로딩 화면이 이미 있다면 제거
+        const existingLoading = document.getElementById('loading-screen');
+        if (existingLoading) {
+            existingLoading.remove();
+        }
+        
+        // 새 로딩 화면 생성
+        const loadingHTML = `
+            <div id="loading-screen" class="loading-screen">
+                <div class="loading-container">
+                    <div class="loading-logo">
+                        <img src="img/LOGO.png" alt="RELIFE Logo" class="loading-logo-image">
+                        <span class="loading-logo-text">RELIFE</span>
+                    </div>
+                    <div class="loading-spinner">
+                        <div class="spinner"></div>
+                    </div>
+                    <div class="loading-text">
+                        <span class="loading-message">새로고침 중...</span>
+                        <div class="loading-progress">
+                            <div class="progress-bar"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `;
+        
+        document.body.insertAdjacentHTML('afterbegin', loadingHTML);
+        
+        // 로딩 시작
+        setTimeout(() => {
+            initLoadingScreen();
+        }, 100);
+        
+        // 실제 새로고침 (약간의 지연 후)
+        setTimeout(() => {
+            window.location.reload();
+        }, 1500);
+    }
+});
+
 // Smooth scrolling for navigation links
 document.addEventListener('DOMContentLoaded', function() {
     // Add smooth scrolling to all anchor links
