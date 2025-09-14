@@ -492,12 +492,50 @@ body.dark .portfolio-image {
   color: #ffc107;
 }
 
-/* Responsive Design */
+/* Tablet Design */
+@media (max-width: 1024px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-3xl);
+  }
+  
+  .portfolio-card {
+    height: 280px;
+  }
+  
+  .portfolio-item-title {
+    font-size: 1.4rem;
+  }
+  
+  .portfolio-description {
+    font-size: 0.9rem;
+  }
+}
+
+/* Mobile Design */
 @media (max-width: 768px) {
   .portfolio-grid {
     grid-template-columns: 1fr;
     gap: var(--spacing-lg);
     margin-top: var(--spacing-3xl);
+  }
+  
+  .portfolio-card {
+    height: 250px;
+  }
+  
+  .portfolio-item-title {
+    font-size: 1.3rem;
+  }
+  
+  .portfolio-description {
+    font-size: 0.85rem;
+  }
+  
+  .detail-btn {
+    font-size: 0.8rem;
+    padding: 6px 12px;
   }
 
   .portfolio-modal {
@@ -523,6 +561,11 @@ body.dark .portfolio-image {
   .tech-tags {
     justify-content: center;
   }
+  
+  .project-link-btn {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 @media (max-width: 480px) {
@@ -531,8 +574,80 @@ body.dark .portfolio-image {
     margin-top: var(--spacing-2xl);
   }
   
+  .portfolio-card {
+    height: 220px;
+  }
+  
+  .portfolio-item-title {
+    font-size: 1.1rem;
+  }
+  
+  .portfolio-description {
+    font-size: 0.8rem;
+  }
+  
+  .detail-btn {
+    font-size: 0.7rem;
+    padding: 4px 8px;
+  }
+  
   .modal-header,
   .modal-content {
     padding: var(--spacing-md);
+  }
+  
+  .modal-header h2 {
+    font-size: var(--font-size-xl);
+  }
+  
+  .modal-section h3 {
+    font-size: var(--font-size-lg);
+  }
+  
+  .tech-tag {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+  
+  .project-summary {
+    font-size: 0.9rem;
+  }
+}
+
+/* Extra Small Devices */
+@media (max-width: 360px) {
+  .portfolio-grid {
+    gap: var(--spacing-sm);
+  }
+  
+  .portfolio-card {
+    height: 200px;
+  }
+  
+  .portfolio-item-title {
+    font-size: 1rem;
+  }
+  
+  .portfolio-description {
+    font-size: 0.75rem;
+  }
+  
+  .detail-btn {
+    font-size: 0.65rem;
+    padding: 3px 6px;
+  }
+  
+  .modal-header,
+  .modal-content {
+    padding: var(--spacing-sm);
+  }
+  
+  .modal-header h2 {
+    font-size: var(--font-size-lg);
+  }
+  
+  .tech-tag {
+    font-size: 0.7rem;
+    padding: 4px 8px;
   }
 }

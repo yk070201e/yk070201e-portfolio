@@ -305,32 +305,147 @@ body.light .video h2 {
   background: #505050;
 }
 
+/* Tablet Design */
+@media (max-width: 1024px) {
+  .video-grid {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-3xl);
+  }
+  
+  .video-card {
+    height: 280px;
+  }
+  
+  .video-item-title {
+    font-size: 1.4rem;
+  }
+  
+  .video-description {
+    font-size: 0.9rem;
+  }
+  
+  .detail-btn {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+}
+
+/* Mobile Design */
 @media (max-width: 768px) {
   .video-grid {
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-3xl);
   }
   
-  .video-title {
-    font-size: 2.5rem;
+  .video-card {
+    height: 250px;
+  }
+  
+  .video-item-title {
+    font-size: 1.3rem;
+  }
+  
+  .video-description {
+    font-size: 0.85rem;
+  }
+  
+  .detail-btn {
+    font-size: 0.8rem;
+    padding: 6px 12px;
   }
 
   .video-modal {
-    margin: 10px;
+    margin: var(--spacing-sm);
     max-height: 95vh;
-    border-radius: 20px;
+    border-radius: var(--radius-xl);
   }
 
   .modal-header,
   .modal-content {
-    padding: 24px;
+    padding: var(--spacing-xl);
   }
 
   .modal-header h2 {
-    font-size: 1.6rem;
+    font-size: var(--font-size-2xl);
   }
 
   .video-player-container {
     aspect-ratio: 16/9;
+  }
+}
+
+@media (max-width: 480px) {
+  .video-grid {
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-2xl);
+  }
+  
+  .video-card {
+    height: 220px;
+  }
+  
+  .video-item-title {
+    font-size: 1.1rem;
+  }
+  
+  .video-description {
+    font-size: 0.8rem;
+  }
+  
+  .detail-btn {
+    font-size: 0.7rem;
+    padding: 4px 8px;
+  }
+  
+  .modal-header,
+  .modal-content {
+    padding: var(--spacing-md);
+  }
+  
+  .modal-header h2 {
+    font-size: var(--font-size-xl);
+  }
+  
+  .video-player-container {
+    aspect-ratio: 4/3;
+  }
+}
+
+/* Extra Small Devices */
+@media (max-width: 360px) {
+  .video-grid {
+    gap: var(--spacing-sm);
+  }
+  
+  .video-card {
+    height: 200px;
+  }
+  
+  .video-item-title {
+    font-size: 1rem;
+  }
+  
+  .video-description {
+    font-size: 0.75rem;
+  }
+  
+  .detail-btn {
+    font-size: 0.65rem;
+    padding: 3px 6px;
+  }
+  
+  .modal-header,
+  .modal-content {
+    padding: var(--spacing-sm);
+  }
+  
+  .modal-header h2 {
+    font-size: var(--font-size-lg);
+  }
+  
+  .video-player-container {
+    aspect-ratio: 1/1;
   }
 }

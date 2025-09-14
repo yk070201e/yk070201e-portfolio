@@ -480,37 +480,168 @@ body.light .design h2 {
   color: #ffc107;
 }
 
+/* Tablet Design */
+@media (max-width: 1024px) {
+  .design-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-3xl);
+  }
+  
+  .design-card {
+    height: 280px;
+  }
+  
+  .design-item-title {
+    font-size: 1.4rem;
+  }
+  
+  .design-description {
+    font-size: 0.9rem;
+  }
+  
+  .detail-btn {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+}
+
+/* Mobile Design */
 @media (max-width: 768px) {
   .design-grid {
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-3xl);
   }
   
-  .design-title {
-    font-size: 2.5rem;
+  .design-card {
+    height: 250px;
+  }
+  
+  .design-item-title {
+    font-size: 1.3rem;
+  }
+  
+  .design-description {
+    font-size: 0.85rem;
+  }
+  
+  .detail-btn {
+    font-size: 0.8rem;
+    padding: 6px 12px;
   }
 
   .design-modal {
-    margin: 10px;
+    margin: var(--spacing-sm);
     max-height: 90vh;
-    border-radius: 20px;
+    border-radius: var(--radius-xl);
   }
 
   .modal-header,
   .modal-content {
-    padding: 24px;
+    padding: var(--spacing-xl);
   }
 
   .modal-header h2 {
-    font-size: 1.6rem;
+    font-size: var(--font-size-2xl);
   }
 
   .info-grid {
     grid-template-columns: 1fr;
-    gap: 16px;
+    gap: var(--spacing-md);
   }
 
   .tool-tags {
     justify-content: center;
+  }
+  
+  .project-link-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .design-grid {
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-2xl);
+  }
+  
+  .design-card {
+    height: 220px;
+  }
+  
+  .design-item-title {
+    font-size: 1.1rem;
+  }
+  
+  .design-description {
+    font-size: 0.8rem;
+  }
+  
+  .detail-btn {
+    font-size: 0.7rem;
+    padding: 4px 8px;
+  }
+  
+  .modal-header,
+  .modal-content {
+    padding: var(--spacing-md);
+  }
+  
+  .modal-header h2 {
+    font-size: var(--font-size-xl);
+  }
+  
+  .modal-section h3 {
+    font-size: var(--font-size-lg);
+  }
+  
+  .tool-tag {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+  
+  .design-purpose,
+  .design-summary {
+    font-size: 0.9rem;
+  }
+}
+
+/* Extra Small Devices */
+@media (max-width: 360px) {
+  .design-grid {
+    gap: var(--spacing-sm);
+  }
+  
+  .design-card {
+    height: 200px;
+  }
+  
+  .design-item-title {
+    font-size: 1rem;
+  }
+  
+  .design-description {
+    font-size: 0.75rem;
+  }
+  
+  .detail-btn {
+    font-size: 0.65rem;
+    padding: 3px 6px;
+  }
+  
+  .modal-header,
+  .modal-content {
+    padding: var(--spacing-sm);
+  }
+  
+  .modal-header h2 {
+    font-size: var(--font-size-lg);
+  }
+  
+  .tool-tag {
+    font-size: 0.7rem;
+    padding: 4px 8px;
   }
 }

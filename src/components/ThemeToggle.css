@@ -143,6 +143,38 @@
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
 }
 
+/* Tablet Design */
+@media (max-width: 1024px) {
+  .theme-toggle-container {
+    top: var(--spacing-lg);
+    right: var(--spacing-xl);
+  }
+  
+  .theme-toggle {
+    width: 95px;
+    height: 38px;
+  }
+  
+  .toggle-slider {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .toggle-slider.slide-left {
+    transform: translateX(-18px);
+  }
+  
+  .toggle-slider.slide-right {
+    transform: translateX(42px);
+  }
+  
+  .toggle-slider svg {
+    width: 15px;
+    height: 15px;
+  }
+}
+
+/* Mobile Design */
 @media (max-width: 768px) {
   .theme-toggle-container {
     top: var(--spacing-lg);
@@ -197,9 +229,79 @@
   .theme-toggle {
     width: 80px;
     height: 32px;
+    padding: 0 var(--spacing-xs);
+  }
+  
+  .toggle-slider {
+    width: 26px;
+    height: 26px;
+  }
+  
+  .toggle-slider.slide-left {
+    transform: translateX(-10px);
+  }
+  
+  .toggle-slider.slide-right {
+    transform: translateX(46px);
+  }
+  
+  .toggle-slider svg {
+    width: 12px;
+    height: 12px;
   }
   
   .toggle-text {
-    font-size: var(--font-size-xs);
+    font-size: 0.7rem;
+  }
+  
+  .theme-toggle.night .toggle-text {
+    left: 60%;
+  }
+  
+  .theme-toggle.day .toggle-text {
+    left: 40%;
+  }
+}
+
+/* Extra Small Devices */
+@media (max-width: 360px) {
+  .theme-toggle-container {
+    top: var(--spacing-sm);
+    right: var(--spacing-sm);
+  }
+  
+  .theme-toggle {
+    width: 70px;
+    height: 28px;
+  }
+  
+  .toggle-slider {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .toggle-slider.slide-left {
+    transform: translateX(-8px);
+  }
+  
+  .toggle-slider.slide-right {
+    transform: translateX(48px);
+  }
+  
+  .toggle-slider svg {
+    width: 10px;
+    height: 10px;
+  }
+  
+  .toggle-text {
+    font-size: 0.6rem;
+  }
+  
+  .theme-toggle.night .toggle-text {
+    left: 62%;
+  }
+  
+  .theme-toggle.day .toggle-text {
+    left: 38%;
   }
 }
