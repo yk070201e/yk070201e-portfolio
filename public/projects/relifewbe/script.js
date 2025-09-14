@@ -48,15 +48,15 @@ const initLoadingScreen = () => {
     };
     
     // 로딩 시작
-    loadingInterval = setInterval(updateProgress, 100);
+    loadingInterval = setInterval(updateProgress, 50);
     
-    // 최소 로딩 시간 보장 (0.5초)
+    // 최소 로딩 시간 보장 (0.2초)
     setTimeout(() => {
         if (loadingProgress < 100) {
             loadingProgress = 100;
             updateProgress();
         }
-    }, 500);
+    }, 200);
 };
 
 const hideLoadingScreen = () => {
@@ -73,31 +73,8 @@ const hideLoadingScreen = () => {
 
 // 페이지 로드 시 로딩 화면 초기화
 window.addEventListener('load', () => {
-    // 이미지 로딩 완료를 기다림
-    const images = document.querySelectorAll('img');
-    let loadedImages = 0;
-    
-    if (images.length === 0) {
-        initLoadingScreen();
-        return;
-    }
-    
-    images.forEach(img => {
-        if (img.complete) {
-            loadedImages++;
-        } else {
-            img.addEventListener('load', () => {
-                loadedImages++;
-                if (loadedImages === images.length) {
-                    initLoadingScreen();
-                }
-            });
-        }
-    });
-    
-    if (loadedImages === images.length) {
-        initLoadingScreen();
-    }
+    // 이미지 로딩을 기다리지 않고 바로 로딩 시작
+    initLoadingScreen();
 });
 
 // F5 키 감지 및 로딩 화면 재시작
@@ -142,7 +119,7 @@ document.addEventListener('keydown', (e) => {
         // 실제 새로고침 (약간의 지연 후)
         setTimeout(() => {
             window.location.reload();
-        }, 800);
+        }, 400);
     }
 });
 
