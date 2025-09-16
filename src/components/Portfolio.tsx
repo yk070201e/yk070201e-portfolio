@@ -63,8 +63,8 @@ const Portfolio = () => {
       type: 'image',
       details: {
         technologies: ['React', 'Node.js', 'MySQL'],
-        duration: '2025.01 ~ 2025.03',
-        role: '풀스택 개발',
+        duration: '2025',
+        role: '백엔드 개발ㅣ프론트엔드 개발',
         summary: '직무 추천 서비스 웹사이트를 개발했습니다. 사용자 정보를 바탕으로 적합한 직무를 추천하는 시스템을 구현하고, 경기창고 대회에 참가했습니다.',
         link: 'https://youtu.be/mUoYUWkuaH4',
         notice:'• 현재 경진대회 진행 중으로 서버가 자주 변경되어 접속이 불안정하여 영상으로 대체 하였습니다.\n• 프로젝트 보러가기를 클릭할 경우 다른 페이지로 넘어가게 됩니다.'
@@ -80,7 +80,7 @@ const Portfolio = () => {
       details: {
         technologies: ['HTML/CSS'],
         duration: '2024.011.04',
-        role: 'UI/UX 디자인',
+        role: '프론트엔드 개발',
         summary: 'RELIFE 서버의 분위기와 테마에 맞는 웹사이트를 디자인했습니다. 다크 테마와 네온 효과를 활용하여 게임의 분위기를 웹사이트에 반영했습니다.',
         link: '/projects/relifewbe/index.html', 
         notice:'• 프로젝트 보러가기를 클릭할 경우 다른 페이지로 넘어가게 됩니다.\n• 모든 저작권은 클라이언트에 있습니다.\n• 무단 복제 및 배포를 금지합니다.\n• 이미지는 실제 홈페이지와 다를 수 있습니다. '
