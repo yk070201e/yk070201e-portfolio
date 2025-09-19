@@ -31,22 +31,22 @@ const Video = () => {
       videoUrl: 'https://www.youtube.com/embed/y-Y5T3CULzs?autoplay=1&mute=1&loop=1&playlist=y-Y5T3CULzs&controls=1&showinfo=1&rel=0',
       isYouTube: true
     },
-    {
-      id: 3,
-      title: '준비중입니다.',
-      description: '준비중입니다.',
-      thumbnail: '',
-      videoUrl: 'https://www.youtube.com/embed/VIDEO_ID_3?autoplay=1&mute=1&loop=1&playlist=VIDEO_ID_3&controls=1&showinfo=1&rel=0',
-      isYouTube: true
-    },
-    {
-      id: 4,
-      title: '준비중입니다.',
-      description: '준비중입니다.',
-      thumbnail: 'https://via.placeholder.com/400x300/f39c12/ffffff?text=YouTube+Content',
-      videoUrl: 'https://www.youtube.com/embed/VIDEO_ID_4?autoplay=1&mute=1&loop=1&playlist=VIDEO_ID_4&controls=1&showinfo=1&rel=0',
-      isYouTube: true
-    }
+    // {
+    //   id: 3,
+    //   title: '준비중입니다.',
+    //   description: '준비중입니다.',
+    //   thumbnail: '',
+    //   videoUrl: 'https://www.youtube.com/embed/VIDEO_ID_3?autoplay=1&mute=1&loop=1&playlist=VIDEO_ID_3&controls=1&showinfo=1&rel=0',
+    //   isYouTube: true
+    // },
+    // {
+    //   id: 4,
+    //   title: '준비중입니다.',
+    //   description: '준비중입니다.',
+    //   thumbnail: 'https://via.placeholder.com/400x300/f39c12/ffffff?text=YouTube+Content',
+    //   videoUrl: 'https://www.youtube.com/embed/VIDEO_ID_4?autoplay=1&mute=1&loop=1&playlist=VIDEO_ID_4&controls=1&showinfo=1&rel=0',
+    //   isYouTube: true
+    // }
   ])
 
   const handleVideoClick = (item: VideoItem) => {

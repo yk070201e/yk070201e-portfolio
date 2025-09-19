@@ -39,6 +39,7 @@ const About = () => {
                   <p className="timeline-description">사이버 가디언즈 정보보안 교육 (2023.05 ~ 12)</p>
                   <p className="timeline-description">직업계고 도약캠프 (2023, 2025)</p>
                   <p className="timeline-description">달고나 고졸채용 박람회 참가 (2024.09)</p>
+                  <p className="timeline-description">산업 취업 맞춤반 교육프로그램 (2025.07.07. ~ 08.26)</p>
                 </div>
               </div>
               <div className="timeline-item">
@@ -57,6 +58,8 @@ const About = () => {
                   <p className="timeline-description">직무 추천 서비스 개발 프로젝트</p>
                   <p className="timeline-period">서호중학교 ( 2022.05 )</p>
                   <p className="timeline-description">유니버셜 디자인공모대회 장려상</p>
+                  <p className="timeline-period">경기창고 ( 2025.05.19 ~ 현재 )</p>
+                  <p className="timeline-description">AI 직무추천 서비스 데이토리</p>
                 </div>
               </div>
               <div className="timeline-item">
