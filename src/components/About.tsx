@@ -54,8 +54,6 @@ const About = () => {
                 <div className="timeline-dot"></div>
                 <div className="timeline-content">
                   <h4>대회 참가 및 수상 경력</h4>
-                  <p className="timeline-period">2025 ~ 2026</p>
-                  <p className="timeline-description">직무 추천 서비스 개발 프로젝트</p>
                   <p className="timeline-period">서호중학교 ( 2022.05 )</p>
                   <p className="timeline-description">유니버셜 디자인공모대회 장려상</p>
                   <p className="timeline-period">경기창고 ( 2025.05.19 ~ 현재 )</p>
